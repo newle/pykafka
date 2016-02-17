@@ -132,4 +132,4 @@ class BrokerConnection(object):
             self.disconnect()
             raise
         # Drop CorrelationId => int32
-        return buffer(self._buff[4:4 + size])
+        return buffer(self._buff[4:size])
